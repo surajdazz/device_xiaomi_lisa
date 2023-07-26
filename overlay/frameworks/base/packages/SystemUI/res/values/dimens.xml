@@ -28,4 +28,9 @@
 
     <!--  Total minimum padding to enforce to ensure that the dot can always show  -->
     <dimen name="ongoing_appops_dot_min_padding">16dp</dimen>
+
+    <!-- Burn-in shift -->
+    <dimen name="burnin_protection_horizontal_shift">1dp</dimen>
+    <dimen name="burnin_protection_vertical_shift">1dp</dimen>
+
 </resources>
