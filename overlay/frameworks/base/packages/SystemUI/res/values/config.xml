@@ -39,8 +39,9 @@
     <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">@dimen/physical_power_button_center_screen_location_y</dimen>
     
-    <!-- Burn in protection -->
+    <!-- Burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
+    <integer name="config_shift_interval">40</integer>
     
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->

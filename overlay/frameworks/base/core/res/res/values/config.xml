@@ -619,7 +619,7 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system/lib64/libEGL.so"</item>
         <item>"/system/lib64/libhwui.so"</item>
@@ -840,7 +840,6 @@
     <!-- Default values for LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>
 
-
     <!-- Build fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false">Xiaomi/lisa_global/lisa:13/RKQ1.211001.001/V14.0.4.0.TKOMIXM:user/release-keys</string>
 
@@ -849,4 +848,17 @@
     
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+    </string-array>
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
 </resources>
